@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @theme {
   --color-neutral-darker: #1c1d21;
@@ -13,5 +14,14 @@
   /* Secondary colors */
   --color-secondary-income: #d6ff62;
   --color-secondary-expense: #f87828;
+
+  /**/
+  --font-work-sans: "Work Sans", sans-serif;
 }
 /* @theme é o equivalente ao css variables dentro do tailwind. porém para cores. o negócio aqui é colocar sempre o --color-<nome da cor> */
+
+@layer base {
+  html {
+    @apply font-work-sans;
+  }
+}
