@@ -6,6 +6,7 @@ import { Main } from "./components/Main";
 import { ProgressBar } from "./components/ProgressBar";
 import { Savings } from "./components/Savings";
 import { SearchInput } from "./components/SearchInput";
+import { Transaction } from "./components/Transaction";
 import { Typography } from "./components/Typography";
 function App() {
   return (
@@ -37,12 +38,17 @@ function App() {
             {/* terceiro card */}
             <Card>
               <Card.header>Movimentação financeira</Card.header>
-              <Card.body>200</Card.body>
+              <Card.body>
+                <Transaction />
+              </Card.body>
             </Card>
             {/* quarto card */}
             <Card>
               <Card.header>Minhas contas</Card.header>
-              <Card.body>200</Card.body>
+              <Card.body>
+                200
+                {/* Componente Accounts */}
+              </Card.body>
             </Card>
           </section>
         </Main>
