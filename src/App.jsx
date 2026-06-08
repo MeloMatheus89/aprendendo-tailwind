@@ -18,7 +18,7 @@ function App() {
             <Typography variant="h1"> Olá, Matheus</Typography>
             <Typography variant="body">Veja como estão as suas finanças hoje.</Typography>
           </div>
-          <section className="grid grid-cols-2 items-stretch">
+          <section className="grid grid-cols-2 items-stretch gap-6">
             {/* Primeiro card */}
             <Card>
               <Card.header>Orçamento diário disponível:</Card.header>

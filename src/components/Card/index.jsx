@@ -1,7 +1,7 @@
 import { Typography } from "../Typography";
 
 const Card = ({ children }) => {
-  return <div className="rounded-3xl">{children}</div>;
+  return <div className="rounded-3xl flex flex-col ">{children}</div>;
 };
 const CardHeader = ({ children }) => {
   return (
@@ -11,7 +11,7 @@ const CardHeader = ({ children }) => {
   );
 };
 const CardBody = ({ children }) => {
-  return <div className="bg-neutral-surface rounded-b-3xl text-neutral-text leading-[120%] px-4 py-6 ">{children}</div>;
+  return <div className="bg-neutral-surface rounded-b-3xl text-neutral-text leading-[120%] px-4 py-6 flex-grow flex flex-col justify-center gap-2">{children}</div>;
 };
 
 Card.header = CardHeader;
