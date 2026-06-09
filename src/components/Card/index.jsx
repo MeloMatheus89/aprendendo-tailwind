@@ -11,7 +11,14 @@ const CardHeader = ({ children }) => {
   );
 };
 const CardBody = ({ children }) => {
-  return <div className="bg-neutral-surface rounded-b-3xl text-neutral-text leading-[120%] px-4 py-6 flex-grow flex flex-col justify-center gap-2">{children}</div>;
+  return (
+    <div
+      className="bg-neutral-surface rounded-b-3xl text-neutral-text leading-[120%] flex-grow flex flex-col justify-center
+  px-4 py-6 
+  ">
+      {children}
+    </div>
+  );
 };
 
 Card.header = CardHeader;

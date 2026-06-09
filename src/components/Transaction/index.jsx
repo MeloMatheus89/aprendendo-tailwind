@@ -27,8 +27,8 @@ const items = [
 
 export const Transaction = () => {
   return (
-    <div className="flex flex-col items-center gap-6">
-      <ul className="w-full">
+    <div className="flex flex-col items-center gap-6 min-h-full">
+      <ul className="w-full items-start grow">
         {items.map((transactionItem, index) => {
           return (
             <li key={index}>
@@ -38,9 +38,11 @@ export const Transaction = () => {
           );
         })}
       </ul>
-      <Button>
-        <IconCurrency /> Adicionar transação
-      </Button>
+      <footer className="w-full flex justify-center pb-4">
+        <Button>
+          <IconCurrency /> Adicionar transação
+        </Button>
+      </footer>
     </div>
   );
 };
